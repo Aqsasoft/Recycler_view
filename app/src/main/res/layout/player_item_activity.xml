@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="13dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="165dp"
+            android:orientation="vertical"
+            android:background="#F1F0F0"
+            app:cardCornerRadius="13dp"
+            android:backgroundTint="#F3F3F3"
+            android:gravity="center"
+
+            >
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:elevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/player_img"
+
+                    />
+            </io.github.florent37.shapeofview.shapes.CircleView>
+<!--            <LinearLayout-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                >-->
+<!--                <ImageView-->
+<!--                    android:layout_width="45dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:id="@+id/player_img"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/player_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:id="@+id/player_text2"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#EFEDED"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+           android:background="@drawable/ic_home"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_usage"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center"
+        />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_chat"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_copy"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_bookmark"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circle"
+                android:layout_width="45dp"
+                android:layout_gravity="center"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:elevation="4dp"
+               >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/babygirl"
+                    />
+
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:hint="Search"
+            android:gravity="center"
+            android:id="@+id/Search_Edit"
+            android:layout_marginStart="17dp"
+
+
+           />
+<!--            <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--                android:id="@+id/searchBar"-->
+<!--                style="@style/MaterialSearchBarLight"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:layout_toEndOf="@+id/circle"-->
+<!--                app:mt_hint="Search"-->
+<!--                app:mt_maxSuggestionsCount="10"-->
+<!--                app:mt_speechMode="true" >-->
+<!--            </com.mancj.materialsearchbar.MaterialSearchBar>-->
+
+        <io.github.florent37.shapeofview.shapes.CircleView
+            android:id="@+id/circle2"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_height="40dp">
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_gravity="center"
+             android:background="@drawable/ic_menu"
+             />
+
+        </io.github.florent37.shapeofview.shapes.CircleView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:text="Your Sports."
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:textAllCaps="true"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    android:layout_marginLeft="25dp"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="6"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#6C6565"
+            android:textSize="15sp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add"
+            android:layout_marginLeft="160dp"
+
+           />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/SportsRecycler"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/liner2"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+     android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/SportsRecycler">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="YOUR Teams."
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="18"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#6C6565"
+            android:textSize="15sp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add"
+            android:layout_marginLeft="160dp"
+
+
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/TeamRecycler"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linear3"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+     android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/TeamRecycler">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="YOUR Players."
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="7"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#6C6565"
+            android:textSize="15sp"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add"
+            android:layout_marginLeft="160dp"
+
+
+            />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/PlayerRecycler"
+   android:layout_below="@id/linear4"
+    android:layout_marginTop="10dp">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>
